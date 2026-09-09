@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Good Morning greeting with a random motivational quote from the internet."
+    />
+    <title>Good Morning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="ray ray-1"></div>
+      <div class="ray ray-2"></div>
+      <div class="ray ray-3"></div>
+    </div>
+
+    <main class="card">
+      <p class="eyebrow">A fresh start</p>
+      <h1>Good Morning</h1>
+      <p class="lede">Here is a little motivation to begin the day.</p>
+
+      <figure class="quote" aria-live="polite" aria-busy="true">
+        <blockquote id="quote-text">Finding a spark of inspiration…</blockquote>
+        <figcaption id="quote-author"></figcaption>
+      </figure>
+
+      <p class="status" id="quote-status" role="status"></p>
+
+      <button type="button" id="new-quote" class="btn">
+        Another quote
+      </button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
